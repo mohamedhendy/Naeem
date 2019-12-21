@@ -1,0 +1,256 @@
+/* Glopal */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow: visible !important;
+}
+body {
+    position: relative;
+    overflow: hidden;
+}
+button:hover {
+    cursor: pointer !important;
+}
+#back {
+    padding: 10px 15px;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    border: none;
+    background-color: #FFF;
+    display: none;
+    z-index: 10;
+}
+#close{
+    padding: 10px 15px;
+    position: absolute;
+    top: 12px;
+    right: 26px;
+    border: none;
+    background-color: transparent;
+    display: none;
+    z-index: 10;
+}
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 5;
+}
+.clearfix {
+    clear: both;
+}
+/*-----------------------------------header section -------------*/
+/* Right section */
+.paddlef {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.right {
+    float: right;
+    width: 50%;
+  
+    position: relative;
+}
+.right  img {
+    width: 100%;
+    height: 100%;
+
+}
+.left {
+    float: left;
+    width: 50%;
+    background-color: rgb(17, 16, 16);
+    padding: 20px;
+    color: #FFF;
+}
+ .timer {
+    padding: 25px 0;
+}
+ .timer ul li {
+    display: inline-block;
+    width:90px;
+    height: 90px;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 4px solid rgb(244, 244, 248);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.left p {
+    color: #FFF !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0px 0 40px 0;
+}
+.left .logo {
+    display: block;
+    margin-bottom: 70px;
+}
+.timer ul li span{
+    font-size: 14px;
+}
+ .timer ul li .tim{
+    font-size: 25px;
+}
+.btn {
+    color: #FFF;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 0 !important;
+    outline: none;
+    font-size: 17px;
+    margin-right: 20px 
+    
+}
+.btn:hover {
+    color: #FFF;
+}
+.btn:focus ,.btn:active{
+    outline: none;
+    box-shadow: none;
+    
+}
+.btn1 {
+    border: 1px solid #FFF;
+    background-color: transparent;
+}
+.btn1:hover, .btn2:hover , #helw:hover{
+    background-color: #FFF;
+    color: rgb(36, 35, 35);
+}
+.btn2 {
+    background-color: #EF0D33;
+}
+ .footerh  {
+    color: #FFF;
+    padding-top: 65px;
+}
+.footerh ul {
+    margin-bottom: 0;
+}
+ .footerh ul li {
+    display: inline-block;
+    padding: 5px;
+}
+.footerh ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+.footerh ul li a:hover {
+    text-decoration: none;
+    color: #FFF;
+    
+}
+.footerh ul li a i {
+    transition: all .1s ease;
+
+}
+.footerh ul li a i:hover {
+    font-size: 22px;
+}
+#carouselExampleFade, .carousel-inner, .carousel-item {
+    height: 100%;
+}
+/* End header section ----------------------------------------------*/
+/*-------------------------- Start  second section  ----------------*/
+section {
+    padding:70px 0;
+}
+section .imm {
+    height: 200px;
+    margin-bottom: 10px;
+}
+section .imm img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+section .these > div {
+    padding: 20px 10px;
+}
+section input, textarea {
+    overflow: visible;
+    border: none;
+    padding: 10px 15px;
+    border-bottom: 1px solid #DDD;
+}
+section textarea {
+    height: 200px;
+}
+section input:focus , textarea:focus{
+    box-shadow: none;
+    outline:none;
+    border-color: rgba(49, 126, 189, 0.911);
+}
+section  span {
+    font-size: 13px;
+    color: rgb(136, 132, 132);
+}
+section .marg > div{
+    margin-bottom: 30px
+}
+
+.mapimages iframe {
+    width: 100%!important;
+    height: 450px!important;
+    border:none;
+    position: relative;
+}
+section > .col-md-6 {
+    overflow: auto;
+}
+
+
+
+@media (max-width: 992px) {
+   .right {
+       width: 100%;
+   }
+   .left {
+    width: 100%;
+    }
+    .paddlef .btn {
+        display: none
+    }
+}
+@media (min-width: 992px) {
+    section > .col-md-6 {
+        height: 100vh !important;
+    }
+    section {
+        padding: 0;
+    }
+    .right{
+        height: 100vh;
+        overflow: auto;
+    }
+    .left {
+        height: 100vh;
+        overflow: auto;
+    }
+    .leftwanted {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        overflow: auto;
+        padding: 52px 23px;
+        display: none
+    }
+    .rightwanted {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        overflow: auto ;
+        display: none;
+        padding: 40px 20px;
+    }
+ }
